@@ -1,0 +1,32 @@
+{
+    "1342463458880262264": {
+        "channel_name": "C-Class Season 14",
+        "logo_filename": "cclass.png",
+        "url_risultati": "https://statbotapp.uk/results/1342463458880262264"
+    },
+    "1247909833961635912": {
+        "channel_name": "CL League",
+        "logo_filename": "cl.png",
+        "url_risultati": "https://statbotapp.uk/results/1247909833961635912"
+    },
+    "1326173864744583168": {
+        "channel_name": "Euro Quads",
+        "logo_filename": "euroquad.png",
+        "url_risultati": "https://statbotapp.uk/results/1326173864744583168"
+    },
+    "1075964636941262868": {
+        "channel_name": "EU Scrim Club",
+        "logo_filename": "euscrims.png",
+        "url_risultati": "https://statbotapp.uk/results/1075964636941262868"
+    },
+    "1035310206646759564": {
+        "channel_name": "FFC EU",
+        "logo_filename": "ffc.png",
+        "url_risultati": "https://statbotapp.uk/results/1035310206646759564"
+    },
+    "981300321345224744": {
+        "channel_name": "Population: One Italian Community",
+        "logo_filename": "population_ita.png",
+        "url_risultati": "https://eurocup-dashboard-h76lwgruyz9ejupyjdsttv.streamlit.app/"
+    }
+}
