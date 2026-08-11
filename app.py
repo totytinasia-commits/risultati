@@ -7,22 +7,6 @@ st.set_page_config(
     page_title="Statbot Leagues Hub", page_icon="🏆", layout="centered"
 )
 
-# CSS personalizzato per compattare gli elementi su mobile
-st.markdown("""
-    <style>
-        .server-card {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-            border: 1px solid rgba(250, 250, 250, 0.2);
-            border-radius: 8px;
-            margin-bottom: 10px;
-            background-color: rgba(255, 255, 255, 0.03);
-        }
-    </style>
-""", unsafe_allow_html=True)
-
 st.title("🏆 Statbot - Hub")
 st.write("Seleziona una lega:")
 st.divider()
@@ -42,21 +26,34 @@ if data:
         logo_filename = info.get("logo_filename", "logo.png")
         url_risultati = info.get("url_risultati", "#")
         
+        # Eventuale secondo link opzionale (es. per Clans League)
+        url_secondario = info.get("url_secondario", None)
+        testo_secondario = info.get("testo_secondario", "Extra")
+        
         logo_path = os.path.join("static", logo_filename)
         if not os.path.exists(logo_path):
             logo_path = "static/logo.png"
 
-        # Layout a riga compatta per mobile: [Icona] [Nome] [Bottone]
-        cols = st.columns([1.2, 3.5, 2.5])
-        
-        with cols[0]:
-            st.image(logo_path, width=45)
-            
-        with cols[1]:
-            st.markdown(f"**{channel_name}**")
-            
-        with cols[2]:
-            st.link_button("🚀 Apri", url_risultati, width='stretch')
+        # Se ci sono 2 pulsanti, ridistribuiamo le colonne in modo ottimale per mobile
+        if url_secondario:
+            cols = st.columns([1.0, 2.5, 1.8, 1.8])
+            with cols[0]:
+                st.image(logo_path, width=40)
+            with cols[1]:
+                st.markdown(f"**{channel_name}**")
+            with cols[2]:
+                st.link_button("🚀 Apri", url_risultati, width='stretch')
+            with cols[3]:
+                st.link_button(f"📊 {testo_secondario}", url_secondario, width='stretch')
+        else:
+            # Layout standard a 1 pulsante
+            cols = st.columns([1.2, 3.5, 2.5])
+            with cols[0]:
+                st.image(logo_path, width=45)
+            with cols[1]:
+                st.markdown(f"**{channel_name}**")
+            with cols[2]:
+                st.link_button("🚀 Apri", url_risultati, width='stretch')
             
         st.divider()
 else:
