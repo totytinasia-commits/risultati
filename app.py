@@ -4,10 +4,10 @@ import streamlit as st
 
 # Configurazione della pagina ottimizzata per mobile
 st.set_page_config(
-    page_title="Statbot Leagues Hub", page_icon="🏆", layout="centered"
+    page_title="Statbot Leagues Hub Scrims Result", page_icon="🏆", layout="centered"
 )
 
-st.title("🏆 Statbot - Hub")
+st.title("🏆 Statbot - Hub Scrims Result")
 st.write("Seleziona una lega:")
 st.divider()
 
