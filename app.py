@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 st.title("🏆 Statbot - Scrims Result")
-st.write("Seleziona una lega:")
+st.write("Select legue:")
 st.divider()
 
 def carica_configurazione():
