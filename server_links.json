@@ -1,10 +1,5 @@
 {
-    "1342463458880262264": {
-        "channel_name": "C-Class Season 14",
-        "logo_filename": "cclass.png",
-        "url_risultati": ""
-    },
-    "1350538852569186375": {
+   "1350538852569186375": {
         "channel_name": "CL League tuesday",
         "logo_filename": "cl.png",
         "url_risultati": "https://clans-legues-tuesday-scrims-tlpehvubdrncbfo6pm7g5x.streamlit.app/"
@@ -28,11 +23,6 @@
         "channel_name": "EU Scrim Club",
         "logo_filename": "euscrims.png",
         "url_risultati": "https://euscrims-jym7ekup39k57h66e4ljyz.streamlit.app"
-    },
-    "1035310206646759564": {
-        "channel_name": "FFC EU",
-        "logo_filename": "ffc.png",
-        "url_risultati": ""
     },
     "981300321345224744": {
         "channel_name": "Population: One Italian Community",
